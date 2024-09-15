@@ -1,0 +1,54 @@
+# Python
+*.py[cod]
+__pycache__/
+*.sqlite3
+*.log
+
+# Django
+*.db
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.coverage
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Static files
+/static/
+media/
+
+# Local settings
+local_settings.py
+settings/local.py
+
+# Test and coverage reports
+.coverage
+htmlcov/
+.coverage.*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Backup files
+*~ 
+*.bak
+
+# Other files
+.DS_Store
+Thumbs.db
