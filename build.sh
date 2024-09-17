@@ -22,8 +22,8 @@ echo "Applying migrations..."
 python manage.py migrate
 
 # Start Redis server (if Redis isn't already managed separately, e.g., via Docker or system service)
-echo "Starting Redis server..."
-redis-server --daemonize yes
+# echo "Starting Redis server..."
+# redis-server --daemonize yes
 
 # Start Celery worker (assumes the Celery configuration is already set up in your Django project)
 echo "Starting Celery worker..."
