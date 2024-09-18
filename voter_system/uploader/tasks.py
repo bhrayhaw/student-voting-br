@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from celery import shared_task
 from .models import Student
 from django.core.mail import send_mail
@@ -28,7 +29,7 @@ def process_file(file_path, admin_email):
         send_mail(
             subject='Student File Processing Completed',
             message=f'The file {file_path} has been processed successfully.',
-            from_email='elijah1@st.umat.edu.gh',  
+            from_email= os.getenv('ADMIN_EMAIL'),  
             recipient_list=[admin_email],  
         )
         
