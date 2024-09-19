@@ -33,4 +33,6 @@ celery -A voter_system worker --loglevel=info --detach
 echo "Starting Celery beat..."
 celery -A voter_system beat --loglevel=info --detach
 
+echo "File processing completed"
+
 echo "Build completed successfully!"
